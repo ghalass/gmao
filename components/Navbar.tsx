@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <Link className="navbar-brand" href={"/"}>
+            GMAO
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,20 +22,21 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" href={"/"}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
+                <Link className="nav-link" href={"/sites"}>
+                  Sites
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" href={"/"}>
                   Pricing
-                </a>
+                </Link>
               </li>
+
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
