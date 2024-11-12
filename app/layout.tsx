@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import BootstrapJS from "@/components/BootstrapJS";
+
+import { Toaster } from "react-hot-toast";
+import Navbar from "./components/Navbar";
+import BootstrapJS from "./components/BootstrapJS";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -22,9 +23,9 @@ export default function RootLayout({
 
         <div className="m-2">{children}</div>
 
-        <Footer />
-
         <BootstrapJS />
+
+        <Toaster />
       </body>
     </html>
   );

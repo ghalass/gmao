@@ -17,6 +17,14 @@ npm i react-icons
 
 npm i zod
 
+## install react-hot-toast
+
+npm i react-hot-toast
+
+## install conform
+
+npm install @conform-to/react @conform-to/zod --save
+
 ## install prisma
 
 npm i -D prisma

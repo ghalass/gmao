@@ -7,7 +7,7 @@ import { MdOutlineAddLocationAlt } from "react-icons/md";
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="row">
-      <div className="col-4">
+      <div className="col-sm-4">
         <div className="card">
           <div className="card-header text-center d-flex align-items-center justify-content-start gap-1">
             <FaMapMarkerAlt className="text-secondary " /> Gestion des sites

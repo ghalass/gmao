@@ -46,28 +46,26 @@ const SitesPage = () => {
           </thead>
           <tbody>
             {sites.map((site) => (
-              <>
-                <tr key={site.id}>
-                  <td>{site.id}</td>
-                  <td>{site.name}</td>
-                  <td className="d-flex gap-1">
-                    <Link
-                      className="btn btn-sm btn-outline-info d-flex align-items-center gap-1"
-                      href={`/sites/${site.id}/edit`}
-                    >
-                      <CiEdit />
-                      Edit
-                    </Link>
-                    <Link
-                      className="btn btn-sm btn-outline-danger d-flex align-items-center gap-1"
-                      href={`/sites/${site.id}/delete`}
-                    >
-                      <CiTrash />
-                      Delete
-                    </Link>
-                  </td>
-                </tr>
-              </>
+              <tr key={site.id}>
+                <td>{site.id}</td>
+                <td>{site.name}</td>
+                <td className="d-flex gap-1">
+                  <Link
+                    className="btn btn-sm btn-outline-info d-flex align-items-center gap-1"
+                    href={`/sites/${site.id}/edit`}
+                  >
+                    <CiEdit />
+                    Edit
+                  </Link>
+                  <Link
+                    className="btn btn-sm btn-outline-danger d-flex align-items-center gap-1"
+                    href={`/sites/${site.id}/delete`}
+                  >
+                    <CiTrash />
+                    Delete
+                  </Link>
+                </td>
+              </tr>
             ))}
           </tbody>
         </table>
