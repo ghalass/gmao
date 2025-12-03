@@ -1,0 +1,30 @@
+{
+  "name": "gmao",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "4.2.1",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/jsonwebtoken": "^9.0.10",
+    "bcrypt-ts": "^8.0.0",
+    "drizzle-orm": "^0.44.7",
+    "jsonwebtoken": "^9.0.2",
+    "nuxt": "^4.2.1",
+    "pg": "^8.16.3",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.6",
+    "drizzle-kit": "^0.31.7"
+  }
+}
