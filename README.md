@@ -6,3 +6,4 @@ npx drizzle-kit generate
 npx drizzle-kit migrate
 pnpm add bcrypt-ts
 pnpm add jsonwebtoken
+pnpm add @tanstack/vue-table

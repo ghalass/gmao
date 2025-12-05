@@ -1,8 +1,11 @@
 <!-- app.vue -->
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <UApp>
+    <NuxtLayout>
+      <NuxtPage />
+      <UToaster />
+    </NuxtLayout>
+  </UApp>
 </template>
 
 <script setup>

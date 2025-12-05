@@ -2,7 +2,9 @@
   <nav class="flex justify-between p-4 bg-neutral-800" :key="refreshKey">
     <NuxtLink to="/">Website</NuxtLink>
 
-    <ul class="inline-flex gap-2">
+    <ul class="inline-flex items-center gap-2">
+      <UColorModeSwitch />
+      <li><NuxtLink to="/sites">Sites</NuxtLink></li>
       <li><NuxtLink to="/about">About</NuxtLink></li>
       <div v-if="!user" class="inline-flex gap-2">
         <li><NuxtLink to="/login">login</NuxtLink></li>

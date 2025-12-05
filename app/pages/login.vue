@@ -1,39 +1,65 @@
 <template>
+  <PageTitle>Login</PageTitle>
   <div class="p-4">
-    <form
+    <UForm
       action=""
       class="flex flex-col items-center gap-2"
       @submit.prevent="submitForm"
     >
       <div class="flex gap-2 items-center justify-center">
-        <label for="username">Nom d'utilisateur: </label>
+        <!-- <label for="username">Nom d'utilisateur: </label>
         <input
           v-model="form.username"
           type="text"
           name="username"
           id="username"
           autocomplete="off"
-        />
+        /> -->
+        <UFormField label="username" required>
+          <UInput
+            v-model="form.username"
+            placeholder="Nom d'utilisateur"
+            type="text"
+            name="username"
+            id="username"
+            autocomplete="off"
+          />
+        </UFormField>
       </div>
 
       <div class="flex gap-2 items-center justify-center">
-        <label for="password">Mot de passe: </label>
+        <!-- <label for="password">Mot de passe: </label>
         <input
           v-model="form.password"
           type="password"
           name="password"
           id="password"
           autocomplete="off"
-        />
+        /> -->
+
+        <UFormField label="password" required>
+          <UInput
+            v-model="form.password"
+            placeholder="Mot de passe"
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+          />
+        </UFormField>
       </div>
 
-      <button type="submit" class="px-6!">Login</button>
+      <UButton type="submit">Login</UButton>
       <div v-if="error">{{ error }}</div>
-    </form>
+      <!-- <button type="submit" class="px-6!">Login</button> -->
+    </UForm>
   </div>
 </template>
 
 <script lang="ts" setup>
+useHead({
+  title: "Login",
+});
 const form = reactive({
   username: "",
   password: "",

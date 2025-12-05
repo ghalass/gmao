@@ -34,6 +34,9 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+  title: "Register",
+});
 const form = reactive({
   username: "",
   password: "",

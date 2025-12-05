@@ -1,0 +1,13 @@
+@baseUrl=http://localhost:3000/api
+
+### RESISTER USER
+GET {{baseUrl}}/sites
+
+### LOGIN USER
+POST {{baseUrl}}/sites
+Content-Type: application/json
+
+{
+    "name":"pg11"
+}
+
